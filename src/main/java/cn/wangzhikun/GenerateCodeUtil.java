@@ -69,6 +69,9 @@ public class GenerateCodeUtil {
     private static final String OUT_PATH = "src\\main\\";
 
 
+    /**
+     *  代码输出目录
+     */
     private static  final  String CLASS_PATH =OUT_PATH+"java/";
 
     /**
