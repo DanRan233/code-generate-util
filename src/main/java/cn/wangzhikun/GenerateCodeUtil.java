@@ -24,18 +24,18 @@ public class GenerateCodeUtil {
     /**
      * 数据库url  PS: 不同的数据库类型 注意更换TYPE_CONVERT与KEY_WORDS_HANDLER与当前数据库一致
      */
-    private static final String URL = "jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&useSSL=false";
+    private static final String URL = "jdbc:mysql://db.a-dog.cn:33306/auth?characterEncoding=utf-8&useSSL=false";
 
 
     /**
      * 数据库用户名
      */
-    private static final String USERNAME = "root";
+    private static final String USERNAME = "wzk";
 
     /**
      * 数据库密码
      */
-    private static final String PASSWORD = "root";
+    private static final String PASSWORD = "722104";
 
 
     /**
@@ -48,7 +48,15 @@ public class GenerateCodeUtil {
      */
     private static final List<String> TABLE_NAMES = new ArrayList<>();
     static {
-        TABLE_NAMES.add("test");
+        TABLE_NAMES.add("oauth_access_token");
+        TABLE_NAMES.add("oauth_authorization_code");
+        TABLE_NAMES.add("oauth_client");
+        TABLE_NAMES.add("permission");
+        TABLE_NAMES.add("role");
+        TABLE_NAMES.add("role_permission");
+        TABLE_NAMES.add("tenant");
+        TABLE_NAMES.add("user");
+        TABLE_NAMES.add("user_role");
     }
 
     /**
@@ -87,12 +95,12 @@ public class GenerateCodeUtil {
     /**
      * 包名
      */
-    private static final String PACKAGE_NAME = "cn.wangzhikun";
+    private static final String PACKAGE_NAME = "cn.a_dog";
 
     /**
      * 模块名
      */
-    private static final String MODEL_NAME = "generatecodeutil";
+    private static final String MODEL_NAME = "oauth";
 
     /**
      * controller 包名
